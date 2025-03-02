@@ -1,0 +1,20 @@
+Thought Process: What Routes Do We Need?
+
+
+Categories:
+GET /categories: List all categories (homepage).
+GET /categories/new: Show a form to add a category.
+POST /categories: Create a new category.
+GET /categories/:id: Show a category and its items.
+GET /categories/:id/edit: Show a form to edit a category.
+PUT /categories/:id: Update a category.
+DELETE /categories/:id: Delete a category (and its items, thanks to cascading delete).
+
+
+
+Items:
+GET /items/new: Form to add an item.
+POST /items: Create an item.
+GET /items/:id/edit: Form to edit an item.
+PUT /items/:id: Update an item.
+DELETE /items/:id: Delete an item.

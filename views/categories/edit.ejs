@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit <%= category.name %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Edit <%= category.name %></h1>
+    <form action="/categories/<%= category.id %>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= category.name %>" required>
+        <br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"><%= category.description %></textarea>
+        <br>
+        <button type="submit">Update Category</button>
+    </form>
+    <a href="/categories/<%= category.id %>">Back</a>
+</body>
+</html>
